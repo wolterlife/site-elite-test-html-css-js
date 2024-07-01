@@ -1,0 +1,215 @@
+:root {
+    --color-primary: #5888aa;
+    --color-callout: #fad188;
+    --color-text: #fff;
+    --color-dark-bg: #2a6787;
+    --color-dark-border: #2a6787;
+    --color-light-bg: rgb(255 255 255 / 15%);
+    --color-light-border: rgb(255 255 255 / 60%);
+    --color-gold: #ffda71;
+    --color-silver: #ced0ca;
+    --color-bronze: #ffffff;
+    --section-padding: clamp(85px, 15vw, 150px);
+    --container-padding: clamp(15px, 4vw, 30px);
+    --mm-size: 100% !important;
+    --mm-max-size: 9999px !important;
+}
+
+.high-contrast {
+    --color-primary: #265d79;
+    --color-callout: #fff;
+    --color-dark-bg: #22526c;
+    --color-dark-border: #22526c;
+    --color-light-bg: #fff;
+    --color-light-border: #fff;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+[id] {
+    scroll-margin-top: 50px;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Gillroy, sans-serif;
+    -webkit-text-size-adjust: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 130%;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+body {
+    --mm-min-size: 190px;
+}
+
+#menu:not(.mm-menu):not(.mm) {
+    display: none;
+}
+
+#header {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #ffffff;
+}
+.header a {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 0;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+.header a[href="#menu"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.mm-wrapper--opened .header a[href="#menu"] {
+    display: none;
+}
+.header a[href="#page"] {
+    display: none;
+}
+.mm-wrapper--opened .header a[href="#page"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.content {
+    position: relative;
+    background-color: red;
+    padding: 125px 50px 50px 50px;
+    text-align: center;
+}
+
+.mm-wrapper--opened .mm-page {
+    /*box-shadow: 0 0 10px rgb(0 0 0 / 20%);*/
+}
+
+.mm-wrapper__blocker {
+    background: none;
+}
+
+.mm-navbar {
+    --mm-color-background: var(--color-bronze);
+    --mm-color-text-dimmed: #999999;
+    --mm-color-icon: #999999;
+    border-bottom: unset;
+    font-size: 18px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mm-panels {
+    --mm-color-background: #fff;
+    --mm-color-text: #999999;
+    --mm-color-icon: #999999;
+}
+
+.mm-panels > .mm-panel {
+    padding-top: 0px;
+}
+
+.mm-listitem:after {
+    content: none;
+}
+
+.mm-listitem > a,
+.mm-listitem > span {
+    padding: 15px 10px 15px 35px;
+}
+
+.fa-close {
+    visibility: hidden;
+}
+
+.mm-menu--theme-white {
+    --mm-color-background-highlight: white !important;
+}
+
+.panel-menu__text--head {
+    font-size: 28px;
+    margin: 10px 10px 10px 0 !important;
+    padding-bottom: 10px !important;
+    border-color: inherit;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    display: block;
+    inset-inline-start: 20px;
+    inset-inline-end: 0;
+    bottom: 0;
+}
+
+.panel-menu__text--regular {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: GillroyRegular, sans-serif;
+    padding: 0 0 10px 18px !important;
+}
+
+.panel-menu__place {
+    margin-top: 30px !important;
+    margin-left: 15px !important;
+}
+
+.panel-menu__phone {
+    margin-top: 30px !important;
+    margin-left: 0px !important;
+}
+
+.mm-btn--close:before {
+    margin-right: 20px;
+    font-size: 200% !important;
+}
+
+.mm-listitem--vertical>.mm-listitem__btn {
+    bottom: auto;
+}
+
+.mm-listitem:after {
+    content: none !important;
+}
+
+.mm-listitem--opened>.mm-listitem__btn:after {
+    transform: rotate(45deg) !important;
+}
+

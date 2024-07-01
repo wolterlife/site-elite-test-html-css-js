@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="layer.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link href="./lib/own-carousel.min.css" rel="stylesheet">
+    <link href="./lib/mmenu.css" rel="stylesheet"/>
+    <title>Patriot</title>
+
+</head>
+<body>
+<div id="page">
+    <div id="header" class="header">
+        <nav class="navbar">
+            <img class="navbar__logo" src="./img/logo.svg" alt="logo">
+            <ul class="navbar__links">
+                <li><a class="navbar__links__item" href='#'>Услуги</a></li>
+                <li><a class="navbar__links__item" href='#'>Продукция</a></li>
+                <li><a class="navbar__links__item" href='#'>Проекты</a></li>
+                <li><a class="navbar__links__item" href='#'>Компания</a></li>
+            </ul>
+        </nav>
+        <div class="contacts">
+            <div class="contacts__place">
+                <img class="contacts__place__image" src="./img/location.svg" alt="location">
+                <p class="contacts__place__text">Санкт-Петербург</p>
+            </div>
+            <div class="contacts__phone">
+                <img class="contacts__phone__image" src="./img/phone.svg" alt="location">
+                <p class="contacts__phone__text">+7 (800) 941-34-28</p>
+            </div>
+            <a href="#menu" class="fa fa-bars"></a>
+            <a href="#page" class="fa fa-close"></a>
+        </div>
+
+    </div>
+    <div id="content">
+        <div class="own-carousel__container">
+            <div class="own-carousel__outer">
+                <div class="own-carousel">
+                    <div class="own-carousel__item carousel-view-1">
+                        <p class="own-carousel__item__text">
+                            Patriot — это ключ к успешному бизнесу по всей территории РФ
+                        </p>
+                        <p class="own-carousel__item__text--small">
+                            Роскошный, быстрый, практичный автомобиль на выгодных условиях лизинга. Станьте ближе к
+                            мечте и
+                            сократите налог на имущество в три раза.
+                        </p>
+                        <form method="post" class="form" action="https://formspree.io/f/xpwazalq"
+                              onsubmit="return validateForm();">
+                            <p class="form__text-head">Оставить заявку</p>
+                            <p class="form__text-second">Заполните форму и мы свяжемся с вами, чтобы узнать детали
+                                вашего
+                                проекта.</p>
+                            <div class="form__input-wrpr">
+                                <div class="form__line">
+                                    <label class="form__label" for="name">Имя*</label>
+                                    <input name="name" class="form__input" id="name" type="text"/>
+                                </div>
+                                <div class="form__line">
+                                    <label class="form__label" for="phone">Телефон*</label>
+                                    <input name="phone" class="form__input" id="phone" type="tel"/>
+                                </div>
+                            </div>
+                            <div class="form__input-wrpr">
+
+                            <div class="form__check-container">
+                                <input class="form__check-container__checkbox" id="confirm" type="checkbox" required>
+                                <label class="form__check-container__label" for="confirm">Я принимаю <u>условия передачи
+                                    информации</u></label>
+                            </div>
+                            <button type="submit" class="form__button">Связаться с нами</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="own-carousel__item carousel-view-2">
+                        <p class="own-carousel__item__text">
+                            Слайд 2, GREEN
+                        </p>
+                        <p class="own-carousel__item__text--small">Роскошный, быстрый, практичный автомобиль на выгодных
+                            условиях лизинга. Станьте ближе к мечте и сократите налог на имущество в три раза.</p>
+                    </div>
+                    <div class="own-carousel__item carousel-view-3">
+                        <p class="own-carousel__item__text">Слайд 3, PURPLE</p>
+                        <p class="own-carousel__item__text--small">
+                            Роскошный, быстрый, практичный автомобиль на выгодных условиях лизинга. Станьте ближе к
+                            мечте и
+                            сократите налог на имущество в три раза.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="own-carousel__control">
+                <input type="image" src="./img/icon-left.svg" class="control__prev" alt="<"/>
+                <input type="image" src="./img/icon-right.svg" class="control__next" alt=">"/>
+            </div>
+        </div>
+        <section class="tariff">
+            <div class="own-carousel__container2 second">
+                <div class="tariff__head">
+                    <p class="tariff__head__text-main">Тарифы</p>
+                    <div class="own-carousel__control tariff__carousel__buttons">
+                        <input type="image" src="./img/icon-left.svg" class="control__prev" alt="<"/>
+                        <input type="image" src="./img/icon-right.svg" class="control__next" alt=">"/>
+                    </div>
+                </div>
+                <div class="own-carousel__outer">
+                    <div class="own-carousel cards">
+                        <div class="own-carousel__item card">
+                            <div class="card__section-top">
+                                <p class="card__section-top__tag">АКЦИЯ</p>
+                                <p class="card__section-top__tag">НОВИНКА</p>
+                                <p class="card__section-top__tag">ХИТ</p>
+                                <p class="card__section-top__name">Лайт</p>
+                            </div>
+                            <div class="card__line first">
+                                <p class="card__line__params">Visa, Master Card, МИР</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Apple Pay, Android Pay</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Электронные кошельки</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Оборот</p>
+                                <p class="card__line__value">от 0 до 200 т.р.</p>
+                            </div>
+                            <div class="card__section-bot">
+                                <p class="card__section-bot__price">120 000 ₽</p>
+                                <button class="card__section-bot__button">Оплатить</button>
+                            </div>
+                        </div>
+                        <div class="own-carousel__item card">
+                            <div class="card__section-top">
+                                <p class="card__section-top__tag">АКЦИЯ</p>
+                                <p class="card__section-top__tag">НОВИНКА</p>
+                                <p class="card__section-top__tag">ХИТ</p>
+                                <p class="card__section-top__name">Лайт</p>
+                            </div>
+                            <div class="card__line first">
+                                <p class="card__line__params">Visa, Master Card, МИР</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Apple Pay, Android Pay</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Электронные кошельки</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Оборот</p>
+                                <p class="card__line__value">от 0 до 200 т.р.</p>
+                            </div>
+                            <div class="card__section-bot">
+                                <div class="card__section-bot__price--wrpr">
+                                <p class="card__section-bot__price">120 000 ₽</p>
+                                <p class="card__section-bot__price--old">125 000 ₽</p>
+                                </div>
+                                <button class="card__section-bot__button">Оплатить</button>
+                            </div>
+                        </div>
+                        <div class="own-carousel__item card">
+                            <div class="card__section-top">
+                                <p class="card__section-top__tag">АКЦИЯ</p>
+                                <p class="card__section-top__tag">НОВИНКА</p>
+                                <p class="card__section-top__tag">ХИТ</p>
+                                <p class="card__section-top__name">Лайт</p>
+                            </div>
+                            <div class="card__line first">
+                                <p class="card__line__params">Visa, Master Card, МИР</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Apple Pay, Android Pay</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Электронные кошельки</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Оборот</p>
+                                <p class="card__line__value">от 0 до 200 т.р.</p>
+                            </div>
+                            <div class="card__section-bot">
+                                <p class="card__section-bot__price">120 000 ₽</p>
+                                <button class="card__section-bot__button">Оплатить</button>
+                            </div>
+                        </div>
+                        <div class="own-carousel__item card">
+                            <div class="card__section-top">
+                                <p class="card__section-top__tag">АКЦИЯ</p>
+                                <p class="card__section-top__tag">НОВИНКА</p>
+                                <p class="card__section-top__tag">ХИТ</p>
+                                <p class="card__section-top__name">Лайт</p>
+                            </div>
+                            <div class="card__line first">
+                                <p class="card__line__params">Visa, Master Card, МИР</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Apple Pay, Android Pay</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Электронные кошельки</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Оборот</p>
+                                <p class="card__line__value">от 0 до 200 т.р.</p>
+                            </div>
+                            <div class="card__section-bot">
+                                <div class="card__section-bot__price--wrpr">
+                                    <p class="card__section-bot__price">120 000 ₽</p>
+                                    <p class="card__section-bot__price--old">125 000 ₽</p>
+                                </div>
+                                <button class="card__section-bot__button">Оплатить</button>
+                            </div>
+                        </div>
+                        <div class="own-carousel__item card">
+                            <div class="card__section-top">
+                                <p class="card__section-top__tag">АКЦИЯ</p>
+                                <p class="card__section-top__tag">НОВИНКА</p>
+                                <p class="card__section-top__tag">ХИТ</p>
+                                <p class="card__section-top__name">Лайт</p>
+                            </div>
+                            <div class="card__line first">
+                                <p class="card__line__params">Visa, Master Card, МИР</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Apple Pay, Android Pay</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Электронные кошельки</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Оборот</p>
+                                <p class="card__line__value">от 0 до 200 т.р.</p>
+                            </div>
+                            <div class="card__section-bot">
+                                <p class="card__section-bot__price">120 000 ₽</p>
+                                <button class="card__section-bot__button">Оплатить</button>
+                            </div>
+                        </div>
+                        <div class="own-carousel__item card">
+                            <div class="card__section-top">
+                                <p class="card__section-top__tag">АКЦИЯ</p>
+                                <p class="card__section-top__tag">НОВИНКА</p>
+                                <p class="card__section-top__tag">ХИТ</p>
+                                <p class="card__section-top__name">Лайт</p>
+                            </div>
+                            <div class="card__line first">
+                                <p class="card__line__params">Visa, Master Card, МИР</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Apple Pay, Android Pay</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Электронные кошельки</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Оборот</p>
+                                <p class="card__line__value">от 0 до 200 т.р.</p>
+                            </div>
+                            <div class="card__section-bot">
+                                <div class="card__section-bot__price--wrpr">
+                                    <p class="card__section-bot__price">120 000 ₽</p>
+                                    <p class="card__section-bot__price--old">125 000 ₽</p>
+                                </div>
+                                <button class="card__section-bot__button">Оплатить</button>
+                            </div>
+                        </div>
+                        <div class="own-carousel__item card">
+                            <div class="card__section-top">
+                                <p class="card__section-top__tag">АКЦИЯ</p>
+                                <p class="card__section-top__tag">НОВИНКА</p>
+                                <p class="card__section-top__tag">ХИТ</p>
+                                <p class="card__section-top__name">Лайт</p>
+                            </div>
+                            <div class="card__line first">
+                                <p class="card__line__params">Visa, Master Card, МИР</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Apple Pay, Android Pay</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Электронные кошельки</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Оборот</p>
+                                <p class="card__line__value">от 0 до 200 т.р.</p>
+                            </div>
+                            <div class="card__section-bot">
+                                <p class="card__section-bot__price">120 000 ₽</p>
+                                <button class="card__section-bot__button">Оплатить</button>
+                            </div>
+                        </div>
+                        <div class="own-carousel__item card">
+                            <div class="card__section-top">
+                                <p class="card__section-top__tag">АКЦИЯ</p>
+                                <p class="card__section-top__tag">НОВИНКА</p>
+                                <p class="card__section-top__tag">ХИТ</p>
+                                <p class="card__section-top__name">Лайт</p>
+                            </div>
+                            <div class="card__line first">
+                                <p class="card__line__params">Visa, Master Card, МИР</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Apple Pay, Android Pay</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Электронные кошельки</p>
+                                <p class="card__line__value">3,7%</p>
+                            </div>
+                            <div class="card__line">
+                                <p class="card__line__params">Оборот</p>
+                                <p class="card__line__value">от 0 до 200 т.р.</p>
+                            </div>
+                            <div class="card__section-bot">
+                                <div class="card__section-bot__price--wrpr">
+                                    <p class="card__section-bot__price">120 000 ₽</p>
+                                    <p class="card__section-bot__price--old">125 000 ₽</p>
+                                </div>
+                                <button class="card__section-bot__button">Оплатить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<nav id="menu">
+    <ul id="panel-menu">
+        <li class="panel-menu__text--head"><span>Услуги</span>
+            <ul>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Управление активами и инвестиции</a>
+                </li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Автоматизация бизнеса</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Финансовый аудит</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Юридическая практика</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Лизинг</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Информационная безопасность</a></li>
+            </ul>
+        </li>
+        <li class="panel-menu__text--head"><span>Продукция</span>
+            <ul>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Управление активами и инвестиции</a>
+                </li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Автоматизация бизнеса</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Финансовый аудит</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Юридическая практика</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Лизинг</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Информационная безопасность</a></li>
+            </ul>
+        </li>
+        <li class="panel-menu__text--head"><span>Проекты</span>
+            <ul>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Управление активами и инвестиции</a>
+                </li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Автоматизация бизнеса</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Финансовый аудит</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Юридическая практика</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Лизинг</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Информационная безопасность</a></li>
+            </ul>
+        </li>
+        <li class="panel-menu__text--head"><span>Компания</span>
+            <ul>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Управление активами и инвестиции</a>
+                </li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Автоматизация бизнеса</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Финансовый аудит</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Юридическая практика</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Лизинг</a></li>
+                <li><a class="panel-menu__text--regular" href="#/about/history">Информационная безопасность</a></li>
+            </ul>
+        </li>
+        <li class="panel-menu__place">
+            <img class="contacts__place__image" src="./img/location.svg" alt="location">
+            <p class="contacts__place__text">Санкт-Петербург</p>
+        </li>
+        <li class="panel-menu__phone">
+            <img class="contacts__phone__image" src="./img/phone.svg" alt="location">
+            <p class="contacts__phone__text">+7 (800) 941-34-28</p>
+        </li>
+
+    </ul>
+</nav>
+<script src="./lib/mmenu.js"></script>
+
+<script>
+  document.addEventListener("click", (evnt) => {
+    if (evnt.target?.closest?.('a[href^="#/"]')) {
+      evnt.preventDefault();
+      alert("Это же тестовое задание. Оно не должно вести куда-то. Но пусть ведёт вас на путь счастья :)");
+    }
+  });
+
+
+</script>
+
+
+</body>
+<script src="./lib/own-carousel.js"></script>
+<script src="main.js"></script>
+</html>
